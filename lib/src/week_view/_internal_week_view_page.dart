@@ -208,6 +208,7 @@ class InternalWeekViewPage<T extends Object?> extends StatelessWidget {
           ),
           Expanded(
             child: SingleChildScrollView(
+              physics: NeverScrollableScrollPhysics(),
               controller: scrollController,
               child: SizedBox(
                 height: height,
